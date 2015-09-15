@@ -1,0 +1,7 @@
+ADD_EXECUTABLE ( hellot
+  main.c
+  )
+
+TARGET_LINK_LIBRARIES ( hellot
+  ${GLFW_REQUIRED_LIBRARIES}
+  )
