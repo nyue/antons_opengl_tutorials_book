@@ -13,6 +13,11 @@ INCLUDE_DIRECTORIES (
 
 IF (UNIX AND NOT APPLE)
   SET ( GLFW_REQUIRED_X11_LIBRARIES
+        m
+        dl
+        pthread
+        X11
+        Xxf86vm
         Xi
         Xrandr
         Xinerama
